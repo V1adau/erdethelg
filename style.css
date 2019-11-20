@@ -1,5 +1,6 @@
 body {
   background-color: #363648;
+  font-family: "Open Sans", sans-serif;
 }
 
 .mainContent {
@@ -12,7 +13,6 @@ body {
 
 h1 {
   font-size: 8rem;
-  font-family: "Open Sans", sans-serif;
   padding: 1rem;
   height: 100%;
   color: #c48199;
@@ -43,7 +43,6 @@ h1 {
   width: 100%;
   line-height: normal;
   color: white;
-  font-family: "Open Sans", sans-serif;
 }
 
 .clock-container {
@@ -73,12 +72,16 @@ h3 {
   white-space: nowrap;
   color: #cec8ca;
   align-self: center;
-  margin: 0 2rem;
+  margin: 0 4rem;
 }
 
 @media screen and (max-width: 1300px) {
   h1 {
     font-size: 6rem;
+  }
+
+  h3 {
+    margin: 0 2rem;
   }
 }
 
