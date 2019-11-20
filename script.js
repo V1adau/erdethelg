@@ -72,7 +72,7 @@ const getWeekendStartDay = (dayOfWeek, hours, minutes) => {
   resultDate.setDate(
     resultDate.getDate() + ((7 + dayOfWeek - resultDate.getDay()) % 7)
   );
-  resultDate.setHours(hours, minutes);
+  resultDate.setHours(hours, minutes, 0, 0);
 
   return resultDate;
 };
