@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <!---
+    Created by v1adau.
+
+    Concept is strongly inspired by the following websites:
+    - https://erdetfredag.dk/
+    - https://www.harmannenfalt.no/
+
+    Weekend is set to 17:00 on Fridays.
+
+    Might implement a "select your weekend time" functionality at one point.
+    Might not.
+    Who knows.
+  -->
+  <head>
+    <title>HELG?</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="v1adau" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body onload="isItWeekend();">
+    <div class="mainContent">
+      <div class="answer">
+        <h1 class="no" id="no">NEI!</h1>
+        <h1 class="soon" id="soon">Det nærmer seg...</h1>
+        <h1 class="yes" id="yes">DET ER HELG!</h1>
+      </div>
+
+      <div class="explanationDiv" id="countdownContainer">
+        <h3 id="explanationPre"></h3>
+
+        <div id="countdown">
+          <div class="clock-container" id="daysContainer">
+            <span class="days clock-label"></span>
+            <div class="clock-small-text">Dager</div>
+          </div>
+          <div class="clock-container">
+            <span class="hours clock-label"></span>
+            <div class="clock-small-text">Timer</div>
+          </div>
+          <div class="clock-container">
+            <span class="minutes clock-label"></span>
+            <div class="clock-small-text">Minutter</div>
+          </div>
+          <div class="clock-container">
+            <span class="seconds clock-label"></span>
+            <div class="clock-small-text">Sekunder</div>
+          </div>
+        </div>
+
+        <h3 id="explanationPost"></h3>
+      </div>
+    </div>
+  </body>
+</html>
