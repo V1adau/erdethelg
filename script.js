@@ -1,7 +1,7 @@
 const isItWeekend = () => {
   const now = new Date();
 
-  if (now.getDay == 6 || now.getDay == 7) {
+  if (now.getDay() == 6 || now.getDay() == 7) {
     itIsWeekend();
     return;
   }
