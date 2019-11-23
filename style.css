@@ -1,6 +1,7 @@
 body {
   background-color: #363648;
   font-family: "Open Sans", sans-serif;
+  overflow: hidden;
 }
 
 .mainContent {
@@ -22,7 +23,9 @@ h1 {
 .soon,
 .yes,
 .no,
-.explanationDiv {
+.explanationDiv,
+.pyro-before,
+.pyro-after {
   display: none;
 }
 
@@ -137,7 +140,6 @@ h3 {
     font-size: 0.7rem;
   }
 }
-
 
 .fade-in {
     -webkit-animation: fadein 1s;

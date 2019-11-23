@@ -33,6 +33,9 @@ const itIsWeekend = () => {
 
   document.getElementById("yes").style.display = "block";
   document.getElementById("yes").classList.add("fade-in");
+
+  document.getElementById("pyro-start").style.display = "block";
+  document.getElementById("pyro-end").style.display = "block";
 };
 
 const itIsNotWeekend = () => {
@@ -49,6 +52,9 @@ const itIsNotWeekend = () => {
 
   document.getElementById("explanationPre").innerText = "Det er fremdeles";
   document.getElementById("explanationPost").innerText = "igjen til helg...";
+
+  document.getElementById("pyro-start").style.display = "hidden";
+  document.getElementById("pyro-end").style.display = "hidden";
 };
 
 const itIsSoonWeekend = () => {
@@ -65,6 +71,9 @@ const itIsSoonWeekend = () => {
 
   document.getElementById("explanationPre").innerText = "Det er bare";
   document.getElementById("explanationPost").innerText = "igjen til helg!";
+
+  document.getElementById("pyro-start").style.display = "hidden";
+  document.getElementById("pyro-end").style.display = "hidden";
 };
 
 const getWeekendStartDay = (dayOfWeek, hours, minutes) => {

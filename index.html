@@ -33,13 +33,15 @@
     <meta name="author" content="v1adau" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="fireworks.css" />
     <script src="script.js"></script>
   </head>
 
   <body onload="isItWeekend();">
+    <div class="pyro-before" id="pyro-start"></div>
     <div class="mainContent">
       <div class="answer">
-        <h1 class="no" id="no">NEI!</h1>
+        <h1 class="no" id="no">NEI</h1>
         <h1 class="soon" id="soon">Det nærmer seg...</h1>
         <h1 class="yes" id="yes">DET ER HELG!</h1>
       </div>
@@ -68,6 +70,8 @@
 
         <h3 id="explanationPost"></h3>
       </div>
+
+      <div class="pyro-after" id="pyro-end"></div>
     </div>
   </body>
 </html>
