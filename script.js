@@ -26,7 +26,8 @@ const isItWeekend = () => {
 
   const now = new Date();
 
-  if (now.getDay() == 6 || now.getDay() == 7) {
+  // Is it saturday or sunday?
+  if (now.getDay() == 6 || now.getDay() == 0) {
     itIsWeekend();
     return;
   }
