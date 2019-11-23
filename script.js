@@ -25,18 +25,26 @@ const isItWeekend = () => {
 
 const itIsWeekend = () => {
   document.getElementById("no").style.display = "none";
+  document.getElementById("no").classList.remove("fade-in");
   document.getElementById("soon").style.display = "none";
+  document.getElementById("soon").classList.remove("fade-in");
   document.getElementById("countdownContainer").style.display = "none";
+  document.getElementById("countdownContainer").classList.remove("fade-in");
 
   document.getElementById("yes").style.display = "block";
+  document.getElementById("yes").classList.add("fade-in");
 };
 
 const itIsNotWeekend = () => {
   document.getElementById("yes").style.display = "none";
+  document.getElementById("yes").classList.remove("fade-in");
   document.getElementById("soon").style.display = "none";
+  document.getElementById("soon").classList.remove("fade-in");
 
   document.getElementById("no").style.display = "block";
+  document.getElementById("no").classList.add("fade-in");
   document.getElementById("countdownContainer").style.display = "flex";
+  document.getElementById("countdownContainer").classList.add("fade-in");
   document.getElementById("daysContainer").style.display = "inline-block";
 
   document.getElementById("explanationPre").innerText = "Det er fremdeles";
@@ -45,11 +53,15 @@ const itIsNotWeekend = () => {
 
 const itIsSoonWeekend = () => {
   document.getElementById("yes").style.display = "none";
+  document.getElementById("yes").classList.remove("fade-in");
   document.getElementById("no").style.display = "none";
+  document.getElementById("no").classList.remove("fade-in");
   document.getElementById("daysContainer").style.display = "none";
 
   document.getElementById("soon").style.display = "block";
+  document.getElementById("soon").classList.add("fade-in");
   document.getElementById("countdownContainer").style.display = "flex";
+  document.getElementById("countdownContainer").classList.add("fade-in");
 
   document.getElementById("explanationPre").innerText = "Det er bare";
   document.getElementById("explanationPost").innerText = "igjen til helg!";
