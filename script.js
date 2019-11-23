@@ -22,7 +22,12 @@ var confettiSettings = {
 };
 
 const isItWeekend = () => {
-  confetti = new ConfettiGenerator(confettiSettings);
+  try {
+    confetti = new ConfettiGenerator(confettiSettings);
+  } catch(error) {
+    console.log("Confetti unavailable");
+    confetti = null;
+  }
 
   const now = new Date();
 
@@ -60,11 +65,13 @@ const itIsWeekend = () => {
   document.getElementById("yes").style.display = "block";
   document.getElementById("yes").classList.add("fade-in");
 
-  confetti.render()
-
   if (!isMobile()) {
     document.getElementById("pyro-start").style.display = "block";
     document.getElementById("pyro-end").style.display = "block";
+  }
+
+  if (confetti) {
+    confetti.render()
   }
 };
 
@@ -86,7 +93,9 @@ const itIsNotWeekend = () => {
   document.getElementById("pyro-start").style.display = "hidden";
   document.getElementById("pyro-end").style.display = "hidden";
 
-  confetti.clear();
+  if (confetti) {
+    confetti.clear();
+  }
 };
 
 const itIsSoonWeekend = () => {
@@ -107,7 +116,9 @@ const itIsSoonWeekend = () => {
   document.getElementById("pyro-start").style.display = "hidden";
   document.getElementById("pyro-end").style.display = "hidden";
 
-  confetti.clear();
+  if (confetti) {
+    confetti.clear();
+  }
 };
 
 const getWeekendStartDay = (dayOfWeek, hours, minutes) => {
