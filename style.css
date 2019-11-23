@@ -10,6 +10,12 @@ body {
   justify-content: center;
   min-height: 90vh;
   flex-direction: column;
+  position:absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 h1 {
@@ -172,4 +178,20 @@ h3 {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+[class|="confetti"] {
+  position: absolute;
+}
+
+.red {
+  background-color: #E94A3F;
+}
+
+.yellow {
+  background-color: #FAA040;
+}
+
+.blue {
+  background-color: #5FC9F5;
 }

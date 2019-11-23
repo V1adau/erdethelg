@@ -35,10 +35,14 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="fireworks.css" />
     <script src="script.js"></script>
+    <script src="confetti.js"></script>
   </head>
 
   <body onload="isItWeekend();">
     <div class="pyro-before" id="pyro-start"></div>
+
+    <canvas id="confetti-holder"></canvas>
+
     <div class="mainContent">
       <div class="answer">
         <h1 class="no" id="no">NEI</h1>
@@ -70,8 +74,9 @@
 
         <h3 id="explanationPost"></h3>
       </div>
-
-      <div class="pyro-after" id="pyro-end"></div>
     </div>
+
+    <div class="pyro-after" id="pyro-end"></div>
+
   </body>
 </html>
