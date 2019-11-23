@@ -34,8 +34,10 @@ const itIsWeekend = () => {
   document.getElementById("yes").style.display = "block";
   document.getElementById("yes").classList.add("fade-in");
 
-  document.getElementById("pyro-start").style.display = "block";
-  document.getElementById("pyro-end").style.display = "block";
+  if (!isMobile()) {
+    document.getElementById("pyro-start").style.display = "block";
+    document.getElementById("pyro-end").style.display = "block";
+  }
 };
 
 const itIsNotWeekend = () => {
@@ -145,3 +147,7 @@ const isSameDay = (date1, date2) => {
     date1.getFullYear() === date2.getFullYear()
   );
 };
+
+const isMobile = () => {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+}
