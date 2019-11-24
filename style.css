@@ -29,9 +29,7 @@ h1 {
 .soon,
 .yes,
 .no,
-.explanationDiv,
-.pyro-before,
-.pyro-after {
+.explanationDiv {
   display: none;
 }
 
