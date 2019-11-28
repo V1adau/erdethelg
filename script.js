@@ -116,7 +116,7 @@ const getWeekendStartDay = (dayOfWeek, hours, minutes) => {
   }
 
   if (hours === undefined) {
-    hours = 17;
+    hours = 16;
   }
 
   if (minutes === undefined) {
