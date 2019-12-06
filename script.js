@@ -84,10 +84,6 @@ const itIsNotWeekend = () => {
 
   document.getElementById("explanationPre").innerText = "Det er fremdeles";
   document.getElementById("explanationPost").innerText = "igjen til helg...";
-
-  if (confetti) {
-    confetti.clear();
-  }
 };
 
 const itIsSoonWeekend = () => {
@@ -104,10 +100,6 @@ const itIsSoonWeekend = () => {
 
   document.getElementById("explanationPre").innerText = "Det er bare";
   document.getElementById("explanationPost").innerText = "igjen til helg!";
-
-  if (confetti) {
-    confetti.clear();
-  }
 };
 
 const getWeekendStartDay = (dayOfWeek, hours, minutes) => {
