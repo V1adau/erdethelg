@@ -13,7 +13,7 @@ export const isItWeekend = () => {
   };
 
   // Is it saturday or sunday?
-  if (now.getDay() === 3 || now.getDay() === 0) {
+  if (now.getDay() === 6 || now.getDay() === 0) {
     return weekendTime;
   }
 
