@@ -1,21 +1,34 @@
 body {
+  margin: 0;
   background-color: #363648;
   font-family: "Open Sans", sans-serif;
-  overflow: hidden;
 }
 
-.mainContent {
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
-  flex-direction: column;
-  position:absolute;
-  z-index: 9;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
 }
 
 h1 {
@@ -24,13 +37,6 @@ h1 {
   height: 100%;
   color: #c48199;
   text-align: center;
-}
-
-.soon,
-.yes,
-.no,
-.explanationDiv {
-  display: none;
 }
 
 .no {
@@ -45,7 +51,15 @@ h1 {
   color: #d8b432;
 }
 
-#countdown {
+h3 {
+  white-space: nowrap;
+  color: #cec8ca;
+  align-self: center;
+  margin: 0 4rem;
+  font-size: 1.2rem;
+}
+
+.countdown {
   font-weight: 100;
   text-align: center;
   font-size: 4rem;
@@ -55,7 +69,7 @@ h1 {
 }
 
 .clock-container {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 3px;
   display: inline-block;
 }
@@ -70,20 +84,27 @@ h1 {
 
 .clock-small-text {
   font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
 }
 
-.explanationDiv {
+.timeLeft {
+  display: flex;
   flex-direction: row;
 }
 
-h3 {
-  white-space: nowrap;
-  color: #cec8ca;
-  align-self: center;
-  margin: 0 4rem;
+.fade-in {
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 @media screen and (max-width: 1300px) {
+  .clock-container {
+    padding: 0.5rem;
+  }
+
   h1 {
     font-size: 6rem;
   }
@@ -98,11 +119,11 @@ h3 {
     font-size: 4rem;
   }
 
-  .explanationDiv {
+  .timeLeft {
     flex-direction: column;
   }
 
-  #countdown {
+  .countdown {
     margin: 2rem 0;
   }
 }
@@ -116,7 +137,7 @@ h3 {
     font-size: 1rem;
   }
 
-  #countdown {
+  .countdown {
     font-size: 2rem;
     margin: 1rem 0;
   }
@@ -135,7 +156,7 @@ h3 {
     font-size: 0.8rem;
   }
 
-  #countdown {
+  .countdown {
     font-size: 1.5rem;
     margin: 1rem 0;
   }
@@ -143,14 +164,6 @@ h3 {
   .clock-small-text {
     font-size: 0.7rem;
   }
-}
-
-.fade-in {
-    -webkit-animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -ms-animation: fadein 2s;
-    -o-animation: fadein 2s;
-    animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -192,4 +205,14 @@ h3 {
 
 .blue {
   background-color: #5FC9F5;
+}
+
+.confettiHolder {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.hiddenConfetti {
+  display: none;
 }
