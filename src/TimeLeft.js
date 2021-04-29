@@ -1,6 +1,6 @@
 import React from "react";
 import { answerEnum } from "./utils/timeUtils";
-import text from "./utils/text";
+import {text} from "./utils/text";
 import Countdown from "./Countdown";
 
 const TimeLeft = ({ answer }) => {

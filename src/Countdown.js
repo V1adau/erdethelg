@@ -1,7 +1,7 @@
 import React from "react";
 import { answerEnum, padNumber } from "./utils/timeUtils";
 import CountdownLabel from "./CountdownLabel";
-import text from "./utils/text";
+import {text} from "./utils/text";
 
 const Countdown = ({ answer }) => {
   if (answer.isItWeekend === answerEnum.YES) {

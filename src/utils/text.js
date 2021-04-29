@@ -1,4 +1,4 @@
-export default {
+export const text = {
   no: "NEI",
   soon: "Det nærmer seg...",
   yes: "DET ER HELG!",

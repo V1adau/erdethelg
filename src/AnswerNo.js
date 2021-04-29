@@ -1,5 +1,5 @@
 import React from "react";
-import text from "./utils/text";
+import {text} from "./utils/text";
 
 const AnswerNo = () => <h1 className="no fade-in">{text.no}</h1>;
 
